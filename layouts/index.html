@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — a pure-Go reimplementation of Ruby&#x27;s confd, MRI-faithful, no cgo</title>
 <meta name="description" content="go-ruby-confd — Ruby-facing confd adapter over abtreece/confd — config templating from backend stores (CGO=0).">
 <style>
